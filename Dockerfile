@@ -6,5 +6,5 @@ RUN echo "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
 RUN echo "Host *\n\tLogLevel ERROR\n\n" >> ~/.ssh/config
 RUN echo "Host *\n\tUserKnownHostsFile /dev/null\n\n" >> ~/.ssh/config
 
-RUN apt install nodejs
-RUN apt install npm
+RUN apt install --yes nodejs
+RUN apt install --yes npm
